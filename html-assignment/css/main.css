@@ -1,0 +1,116 @@
+/* Inheritance */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+p {
+    background-color: #eefdee;
+}
+
+/* Select multiple elements */
+header,
+footer {
+    background-color: #fdeeee;
+}
+
+
+/* Class selector */
+.site-title {
+    color: #93c572;
+}
+
+/* Id selector */
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+/* Replace list bullets with squares */
+#hobby-list {
+    list-style: square;
+}
+
+/* Using nth-child selector */
+#hobby-list li:nth-child(odd) {
+    background-color: #fdeeee;
+}
+
+/* Styling the Navigation */
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    /* Remove underline from links */
+    display: inline-table;
+    padding: 10px;
+    background-color: #eefdee;
+    border: 1px solid #000;
+    transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #fdeeee;
+    /* Change background on hover/focus */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    color: #b28557;
+}
+
+p {
+    background-color: #eefdee;
+}
