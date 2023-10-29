@@ -7,19 +7,21 @@
     <title>The Beatles</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+</head>
+<body>
+<div class="wrapper">
+    
+    <div class="image-container">
+        <img src="./images/thebeatles.jpeg" alt="image">
+        <div class="overlay-text">The Beatles History</div>
+    </div>
+</body>
 
 <body>
 
-    <header>
-        <div class="container">
-            <img class="header-image" src="./images/thebeatles.jpeg" alt="the beatles">
-            <div class="centered">The Beatles History</div>
-        </div>
-    </header>
 
     <!-- adding navigation -->
     <nav role="navigation">
-        <h1>The Beatles</h1>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li>
@@ -36,38 +38,39 @@
 
     <main>
         <!-- adding image and paragraph -->
-        <section id="information">
+        <section id="story"></section>
+        <h2 class="story-heading">Their story</h2> 
+                    <img class="beatles-img" src="./images/beatles.jpeg" alt="the beatles">
+                    <p class="story-text"> The Beatles, an English rock band formed in Liverpool in 1960,
+                        consisting of John Lennon, Paul
+                        McCartney, George Harrison, and Ringo Starr, are widely considered the most influential band
+                        ever.
+                        They played a crucial role in the 1960s counterculture and elevated popular music as an art
+                        form.
+                        Their music, rooted in skiffle, beat, and 1950s rock 'n' roll, blended classical and
+                        traditional
+                        pop
+                        elements in creative ways. They explored various music styles, from folk and Indian music to
+                        psychedelia and hard rock.
+        
+                        On April 10, 1970, McCartney announced he was leaving the group, leading to media frenzy and
+                        worsening tensions among the band members. Legal disputes dragged on, and the official
+                        breakup
+                        wasn't confirmed until December 29, 1974. The Beatles' last live performance took place on
+                        the
+                        rooftop of the Apple building at 3 Savile Row, London, on January 30, 1969. This event
+                        marked
+                        the
+                        climax of their Let It Be film. In preparation for this historic moment, The Beatles wrote
+                        and
+                        rehearsed 14 new songs as they geared up for their first live show in over two years.
+        
+                        "Hey Jude" remains their biggest hit, and they're the top-selling artists worldwide, with
+                        183
+                        million certified albums in America alone.</p>
+       
 
-            <h2 class="information-heading">About The Beatles</h2>
-            <img class="beatles-img" src="./images/beatles.jpeg" alt="the beatles">
-            <p class="information-text"> The Beatles, an English rock band formed in Liverpool in 1960,
-                consisting of John Lennon, Paul
-                McCartney, George Harrison, and Ringo Starr, are widely considered the most influential band
-                ever.
-                They played a crucial role in the 1960s counterculture and elevated popular music as an art
-                form.
-                Their music, rooted in skiffle, beat, and 1950s rock 'n' roll, blended classical and
-                traditional
-                pop
-                elements in creative ways. They explored various music styles, from folk and Indian music to
-                psychedelia and hard rock.
-
-                On April 10, 1970, McCartney announced he was leaving the group, leading to media frenzy and
-                worsening tensions among the band members. Legal disputes dragged on, and the official
-                breakup
-                wasn't confirmed until December 29, 1974. The Beatles' last live performance took place on
-                the
-                rooftop of the Apple building at 3 Savile Row, London, on January 30, 1969. This event
-                marked
-                the
-                climax of their Let It Be film. In preparation for this historic moment, The Beatles wrote
-                and
-                rehearsed 14 new songs as they geared up for their first live show in over two years.
-
-                "Hey Jude" remains their biggest hit, and they're the top-selling artists worldwide, with
-                183
-                million certified albums in America alone.</p>
-
+      
 
             <!-- adding a section for facts -->
 
@@ -100,7 +103,7 @@
                     <label class="feedback-label" for="email">Your email:</label><br>
                     <input type="text" id="email" name="email">
                     <label class="feedback-label" for="your-message">Your message:</label><br>
-                    <textarea name="your-message" class="message-textbox" id="your-message" cols="92"
+                    <textarea name="your-message" class="message-textbox" id="your-message" cols="84"
                         rows="8"></textarea>
 
                     <h4 class="form-heading">Do you feel like you learned more about The Beatles?</h4>
