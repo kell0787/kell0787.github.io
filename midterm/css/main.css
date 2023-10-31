@@ -1,6 +1,6 @@
 body{
     background-color: #186052;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header{
@@ -15,11 +15,6 @@ header{
     margin-bottom: 20px;
 }
 
-.clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
-}
 /* STYLING THE HEADING */
 
 .header-image{
@@ -33,7 +28,7 @@ header{
     margin: auto;
     top:175px;
     left:240px;
-    font-size: 50px;
+    font-size: 120px;
 }
 .image-container {
     position: relative;
@@ -113,6 +108,7 @@ nav ul li a{
 
 .story-heading{
     margin-bottom: 10px;
+    padding: 10px;
 }
 
 .beatles-img{
@@ -122,12 +118,14 @@ nav ul li a{
     float:left;
     padding-right: 20px;
     padding-bottom: 20px;
+    padding-left: 10px;
 }
 
 .story-text{
     font-size:14px;
     word-spacing: 1.7;
     line-height: 1.7;
+    padding: 10px;
 }
 
 /* FACTS */
@@ -135,6 +133,7 @@ nav ul li a{
 .facts{
     margin-top: 25px;
     margin-bottom: 25px;
+    padding: 10px;
 }
 
 .section-heading{
