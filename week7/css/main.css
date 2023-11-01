@@ -73,9 +73,17 @@ padding: 1em;
 width: 50%;
 /* height: 100vh; */
 /* height is 100% of the browser site and its dynamic */
-
+position: relative;
+padding: 1em 1em 4em 1em;
 }
 
+/* position absoloute */
+.blue-link.large-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
 /* selecting HTML elements with class name */
 .blue-link {
     padding: 1.5em;
@@ -141,6 +149,15 @@ h3~p {
 
 [src$=".jpg"] {
     border: 4px solid darkslategray;
+}
+/* fixed navigation */
+
+nav {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* psuedo classes */
