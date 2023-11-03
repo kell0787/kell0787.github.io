@@ -10,7 +10,7 @@ header {
 
 .wrapper {
     margin: auto;
-    width: 750px;
+    max-width: 750px;
     background-color: #a8cf96;
     margin-bottom: 20px;
 }
