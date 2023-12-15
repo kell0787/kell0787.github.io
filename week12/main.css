@@ -1,0 +1,30 @@
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* sections with the same styles in the final */
+header, main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fa-magnifying-glass {
+    font-size: 16rem;
+    color: blue;
+}
+
+.map iframe {
+    width:100%;
+    /* this means it is 100% of the parent element (in this case the main). the map will be responsive to the change in size of the main.  */
+max-width: 800px;
+margin:0 auto;
+/* if margin: 0 auto ever doesnt work try adding display:block */
+display: block;
+}
