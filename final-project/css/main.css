@@ -79,7 +79,6 @@ button {
 
 /* Navigation Styles */
 
-
 nav {
     background-color: #222;
     text-align: center;
@@ -90,9 +89,13 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
+}
+
+form {
+    display: flex;
 }
 
 nav ul li {
@@ -119,12 +122,15 @@ nav ul li a {
 .nav a.current {
     background: #c78c06;
     color: inherit;
+   
+   
 }
 
-.logo {
+.header-logo {
     float: left;
     margin-right: 100%;
     margin-bottom: 10%;
+
 }
 
 /* search */
@@ -153,6 +159,8 @@ nav ul li a {
     border: 1px solid #c78c06;
     padding: 10px;
     font-size: 18px;
+    margin-left: none;
+    margin-bottom: none;
 
 }
 
@@ -254,7 +262,7 @@ p {
 }
 
 .btn {
-    margin-top: 1em;
+    
     background-color: #22222279;
     padding: 2rem;
     color: white;
@@ -283,10 +291,25 @@ hr {
 
 /* Styling Contact */
 
-#contact {
-    margin-left: 10px;
-    margin-right: 10px;
+textarea {
+    width: auto;
+    height:150%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #222;
+    border-radius: 4px;
+resize: none;
 }
+
+/* input [type=text] {
+    width: 100%;
+    height:150%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #222;
+    border-radius: 4px;
+resize: none;
+} */
 
 #feedback {
     border: 1px solid black;
@@ -295,27 +318,19 @@ hr {
 }
 
 .feedback-label {
-    font-size: 13px;
+    font-size: 16px;
+    padding-top:10px;
 }
 
 #fullname,
 #email {
     width: 97.5%;
-}
-
-.form-heading {
-    margin: 10px 0;
-    font-size: 19px;
+    padding: ;
 }
 
 .choice {
     margin-bottom: 7px;
 }
-
-.radio-label {
-    font-size: 13px;
-}
-
 
 .message-textbox {
     resize: none;
@@ -324,13 +339,17 @@ hr {
 .btn-send {
     margin-top: 1em;
     background-color: #222;
-    padding: 0rem;
+    margin-left: 0;
     color: #c78c06;
     border: none;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 /* Styling Hours of Operation */
+
+
+
+/*  */
 
 /**********************************
             DESKTOP STYLES
