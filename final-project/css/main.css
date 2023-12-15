@@ -1,0 +1,339 @@
+/*****************************
+        Custom STYLES
+******************************/
+
+/* Global Styles */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5em;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+a,
+a:link,
+a:visited {
+    color: #c78c06;
+}
+
+a:hover,
+a:focus {
+    color: #222;
+    background-color: #c78c06;
+    padding: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 1em 0 0 0.5em;
+}
+
+/* To ensure that font sizes are proportionate to each other: www.modularscale.com */
+
+h1 {
+    font-size: 5.063rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+    line-height: normal;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+    line-height: normal;
+}
+
+button {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* ^ this makes it center */
+}
+
+/* Navigation Styles */
+
+
+nav {
+    background-color: #222;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    font-size: 18px;
+    padding: 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited {
+    background-color: #222;
+    color: #c78c06;
+}
+
+.nav a:hover {
+    background: #c78c06;
+    color: inherit;
+}
+
+.nav a.current {
+    background: #c78c06;
+    color: inherit;
+}
+
+.logo {
+    float: left;
+    margin-right: 100%;
+    margin-bottom: 10%;
+}
+
+/* search */
+.search {
+    border: 1px solid #222;
+    padding: 5px;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    /* This aligns the search bar and button vertically */
+}
+
+.search input[type="search"] {
+    flex-grow: 1;
+    /* Allows the input to fill the available space */
+    border: none;
+    padding: 8px;
+}
+
+.search-btn {
+    background-color: #333;
+    color: #c78c06;
+    border: 1px solid #c78c06;
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+
+/* Styling Welcome */
+
+.banner {
+    background-image: url(../images/main-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: white;
+}
+
+.welcome {
+    background-color: #222222a7;
+    width: 100%;
+}
+
+.welcome h1 {
+    padding: 1em;
+    padding-left: 0;
+    line-height: 1.5em;
+}
+
+p {
+    margin: 1em;
+}
+
+.fa-play {
+    margin-left: 0.5em;
+}
+
+/* connect with us button */
+.btn-connect {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #c78c06;
+    color: #222;
+    padding: 2em;
+    font-size: 16px;
+    border: none;
+}
+
+
+/* Styling About */
+
+.about-us {
+    background-color: #ffe6ac;
+    margin: 0 auto;
+    margin: 1em;
+    margin-left: 7.3em;
+    margin-right: 7.3em;
+}
+
+.about-us-img {
+    width: 100%;
+  padding:1em;
+}
+
+.about-description {
+    margin-top: 0;
+}
+
+/* Styling Our Services */
+
+.services {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    margin: 1em;
+    background-color: #ffe6ac;
+}
+
+.btn-custom {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #222;
+    color: white;
+    padding: 2em;
+    font-size: 16px;
+    border: none;
+}
+
+/* Styling Our Vision */
+
+.vision {
+    background-image: url(../images/vision.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    margin: 1em;
+    color: white;
+}
+
+.vision h3 {
+    padding-top: 1em;
+}
+
+.btn {
+    margin-top: 1em;
+    background-color: #22222279;
+    padding: 2rem;
+    color: white;
+    border: 1px solid #c78c06;
+    font-size: 16px;
+}
+
+/* Styling Our Team */
+
+.card-team {
+    background-color: #ffe6ac;
+    margin: 1em;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+}
+
+hr {
+    height: 0.12rem;
+    background-color: #c78c06;
+    border: none;
+    margin-left: 1em;
+}
+
+/* Styling Contact */
+
+#contact {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#feedback {
+    border: 1px solid black;
+    padding: 10px; 
+    margin-top: 10px;
+}
+
+.feedback-label {
+    font-size: 13px;
+}
+
+#fullname,
+#email {
+    width: 97.5%;
+}
+
+.form-heading {
+    margin: 10px 0;
+    font-size: 19px;
+}
+
+.choice {
+    margin-bottom: 7px;
+}
+
+.radio-label {
+    font-size: 13px;
+}
+
+
+.message-textbox {
+    resize: none;
+}
+
+.btn-send {
+    margin-top: 1em;
+    background-color: #222;
+    padding: 0rem;
+    color: #c78c06;
+    border: none;
+    font-size: 16px;
+}
+
+/* Styling Hours of Operation */
+
+/**********************************
+            DESKTOP STYLES
+***********************************/
+
+@media screen (min-width:760px) 

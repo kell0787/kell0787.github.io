@@ -5,67 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3 Star Media</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-
-
-    <!-- Navigation section -->
-    <nav>
+    <header>
         <div class="container">
-            <ul class="nav">
-                <li class=" nav-logo"><img src="images/logo.png" alt="logo" height="50px" width="50px"></li>
-                <li class="nav-item"><a class="active" href="#home">Home</a></li>
-                <li class="nav-item"><a href="#about">About us</a></li>
-                <li class="nav-item"><a href="#team">Our Team</a></li>
-                <li class="nav-item"><a href="#contact">Contact Us</a></li>
 
-                <form>
-                    <input type="text" id="search" placeholder="Search">
-                </form>
+            <!-- Navigation section -->
+            <nav>
+                <div class="container">
+                    <ul class="nav">
+                        <ul>
+                            <li> <img src="images/logo.png" alt="three star media" class="header-logo"></li>
+                            <li> <a href="index.html" class="current">Home</a></li>
+                            <li class="nav-item"><a href="#about">About us</a></li>
+                            <li class="nav-item"><a href="#team">Our Team</a></li>
+                            <li class="nav-item"><a href="#contact">Contact Us</a></li>
+
+                            <form class="search">
+                                <input type="text" id="search" placeholder="Search" class="search input">
+                                <button class="search-btn"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </ul>
+
+                </div>
+
+            </nav>
             </ul>
 
-        </div>
-
-    </nav>
-
-    <!-- Welcome section -->
-    <div class="welcome">
-        <div class="container">
-            <div class="overlay">
-                <h1 class="title">Welcome to three star <br/>media</h1>
-                <p class="desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
-                </p>
-                <button class="btn-connect">Connect With Us</button>
+            <div class="banner">
+                <!-- This is a background image for CSS to create layer effect-->
+                <div class="wrapper welcome">
+                    <h1>Welcome to Three Star <br />Media</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea commodo consequat.</p>
+                    <button class="btn-connect">Connect with us<i class="fa-solid fa-play"></i></button>
+                </div>
             </div>
-        </div>
-    </div>
+    </header>
+
 
     <!-- about us section -->
     <div class="about-us">
         <div class="container">
-            <div class="c-row">
-                <div class="c-col">
-                    <img src="images/about-us.jpg">
-                </div>
-                <div class="c-col">
-                    <div class="about-description">
-                        <h2>About Us</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Proin
-                            nibh nisl condimentum id venenatis a condimentum vitae. Nunc eget lorem dolor sed viverra
-                            ipsum nunc aliquet. Massa enim nec dui nunc mattis enim. Mi sit amet mauris commodo quis
-                            imperdiet massa. Nunc mattis enim ut tellus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
+            <img src="images/about-us.jpg" class="about-us-img">
         </div>
+        <div class="about-description">
+            <h2>About Us</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Proin
+                nibh nisl condimentum id venenatis a condimentum vitae. Nunc eget lorem dolor sed viverra
+                ipsum nunc aliquet. Massa enim nec dui nunc mattis enim. Mi sit amet mauris commodo quis
+                imperdiet massa. Nunc mattis enim ut tellus.
+            </p>
+        </div>
+    </div>
+    </div>
+
+    </div>
     </div>
     </div>
 
@@ -76,9 +79,9 @@
             <div class="c-row">
                 <div class="c-col">
                     <div class="card">
-                        <img src="images/digital.jpg">
+                        <img src="images/digital.jpg" class="services" alt="digital">
                         <div class="card-description">
-                            <h2>Digital Transoformation</h2>
+                            <h2>Digital Transformation</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur
@@ -86,13 +89,15 @@
                                 lorem dolor sed viverra ipsum nunc aliquet. Massa enim nec dui nunc mattis enim. Mi sit
                                 amet mauris commodo quis imperdiet massa. Nunc mattis enim ut tellus.
                             </p>
-                            <button class="btn-custom">Digital Plans</button>
+                            <button class="btn-custom">Digital Plans <i class="fa-solid fa-caret-right"
+                                    style="color: #ffffff;"></i></button>  
+                                    <!-- adding arrows ^ -->
                         </div>
                     </div>
                 </div>
                 <div class="c-col">
                     <div class="card">
-                        <img src="images/marketing.jpg">
+                        <img src="images/marketing.jpg" class="services" alt="marketing">
                         <div class="card-description">
                             <h2>Marketing</h2>
                             <p>
@@ -102,7 +107,8 @@
                                 lorem dolor sed viverra ipsum nunc aliquet. Massa enim nec dui nunc mattis enim. Mi sit
                                 amet mauris commodo quis imperdiet massa. Nunc mattis enim ut tellus.
                             </p>
-                            <button class="btn-custom">Marketing Plans</button>
+                            <button class="btn-custom">Marketing Plans <i class="fa-solid fa-caret-right"
+                                    style="color: #ffffff;"></i></button>
                         </div>
                     </div>
                 </div>
@@ -110,7 +116,7 @@
             <div class="c-row">
                 <div class="c-col-1">
                     <div class="card">
-                        <img src="images/video.jpg">
+                        <img src="images/video.jpg" class="services" alt="video">
                         <div class="card-description">
                             <h2>Video Production</h2>
                             <p>
@@ -120,13 +126,14 @@
                                 lorem dolor sed viverra ipsum nunc aliquet. Massa enim nec dui nunc mattis enim. Mi sit
                                 amet mauris commodo quis imperdiet massa. Nunc mattis enim ut tellus.
                             </p>
-                            <button class="btn-custom">Video Plans</button>
+                            <button class="btn-custom">Video Plans <i class="fa-solid fa-caret-right"
+                                    style="color: #ffffff;"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="c-col-1">
                     <div class="card">
-                        <img src="images/web.jpg">
+                        <img src="images/web.jpg" class="services" alt="phone">
                         <div class="card-description">
                             <h2>Web Development</h2>
                             <p>
@@ -136,13 +143,14 @@
                                 lorem dolor sed viverra ipsum nunc aliquet. Massa enim nec dui nunc mattis enim. Mi sit
                                 amet mauris commodo quis imperdiet massa. Nunc mattis enim ut tellus.
                             </p>
-                            <button class="btn-custom">Web Plans</button>
+                            <button class="btn-custom">Web Plans <i class="fa-solid fa-caret-right"
+                                    style="color: #ffffff;"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="c-col-1">
                     <div class="card">
-                        <img src="images/print.jpg">
+                        <img src="images/print.jpg" class="services" alt="print">
                         <div class="card-description">
                             <h2>Print</h2>
                             <p>
@@ -152,7 +160,8 @@
                                 lorem dolor sed viverra ipsum nunc aliquet. Massa enim nec dui nunc mattis enim. Mi sit
                                 amet mauris commodo quis imperdiet massa. Nunc mattis enim ut tellus.
                             </p>
-                            <button class="btn-custom">Print Plans</button>
+                            <button class="btn-custom">Print Plans <i class="fa-solid fa-caret-right"
+                                    style="color: #ffffff;"></i></button>
                         </div>
                     </div>
                 </div>
@@ -162,7 +171,7 @@
     </div>
 
     <!-- Our vision section -->
-    
+
     <div class="vision">
         <div class="container">
             <div class="content">
@@ -174,7 +183,7 @@
                     Massa enim nec dui nunc mattis enim. Mi sit amet mauris commodo quis imperdiet massa. Nunc mattis
                     enim ut tellus.
                 </p>
-                <button class="btn">Learn More</button>
+                <button class="btn">Learn More <i class="fa-solid fa-caret-right" style="color: #ffffff;"></i></button>
             </div>
         </div>
     </div>
@@ -187,7 +196,7 @@
             <div class="c-row">
                 <div class="c-col ">
                     <div class="card team">
-                        <img src="images/john.jpg">
+                        <img src="images/john.jpg" class="about-img" alt="workers">
                         <h3>John Doe</h3>
                         <h4>CEO and Co-owner</h4>
                         <hr>
@@ -202,7 +211,7 @@
                 </div>
                 <div class="c-col ">
                     <div class="card team">
-                        <img src="images/bob.jpg">
+                        <img src="images/bob.jpg" class="about-img" alt="workers">
                         <h3>Bob rite</h3>
                         <h4>CFO and Co-owner</h4>
                         <hr>
@@ -219,9 +228,8 @@
 
         </div>
     </div>
-   
-    <!-- Contact us section -->
 
+    <!-- Contact us section -->
     <div class="contact-us">
         <div class="container">
             <h2>Contact us</h2>
@@ -229,66 +237,68 @@
                 <div class="c-col">
                     <div class="contact-form">
                         <h3>Send us a message</h3>
-                        <form>
-                            <div class="group">
-                                <label>Full name</label>
-                                <input type="text" name="">
-                            </div>
-                            <div class="group">
-                                <label>Email</label>
-                                <input type="text" name="">
-                            </div>
-                            <div class="group">
-                                <label>Message</label>
-                                <textarea name=""></textarea>
-                            </div>
-                            <div class="content">
-                                <button class="btn">Send</button>
-                            </div>
-                        </form>
+                        <div id="feedback>" <form>
+
+                            <label class="feedback-label" for="fullname">Full name</label> <br>
+                            <input type="text" id="fullname" name="fullname"> <br>
+                        </div>
+                        <label class="feedback-label">Email</label>
+                        <input type="text" id="email">
                     </div>
+
+                    <label class="feedback-label">Message</label> <br>
+                    <input type="text" id="your-message">
+                 
                 </div>
-
-                <!-- Hours of operation -->
-               
-                <div class="operation">
-                    <h3>Hours of operation</h3>
-                    <table>
-                        <tr>
-                            <th>
-                                Days
-                            </th>
-                            <th>
-                                Hours
-                            </th>
-
-                        </tr>
-                        <tr>
-                            <td>Monday - Friday</td>
-                            <td>9 AM - 6 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday - Sunday</td>
-                            <td>Closed</td>
-                        </tr>
-
-                    </table>
+                <div class="content">
+                    <button class="btn-send">Send</button>
                 </div>
+                </form>
             </div>
         </div>
 
-        <!-- Location -->
-        <div class="c-col">
-            <div class="location">
-                <h3>Location</h3>
-                <div style="width: 100%">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9444602850867!2d-75.75979661387696!3d45.3499333964843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701049455768!5m2!1sen!2sca"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+
+
+        <!-- Hours of operation -->
+
+        <div class="operation">
+            <h3>Hours of operation</h3>
+            <table>
+                <tr>
+                    <th>
+                        Days
+                    </th>
+                    <th>
+                        Hours
+                    </th>
+
+                </tr>
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>9 AM - 6 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday - Sunday</td>
+                    <td>Closed</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <!-- Location -->
+    <div class="c-col">
+        <div class="location">
+            <h3>Location</h3>
+            <div style="width: 100%">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9444602850867!2d-75.75979661387696!3d45.3499333964843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701049455768!5m2!1sen!2sca"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
+    </div>
     </div>
 
 
