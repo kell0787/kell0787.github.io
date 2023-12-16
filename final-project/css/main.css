@@ -66,10 +66,7 @@ h5 {
     line-height: normal;
 }
 
-button {
-    margin-left: 1em;
-    margin-bottom: 1em;
-}
+
 
 .container {
     max-width: 1200px;
@@ -79,58 +76,49 @@ button {
 
 /* Navigation Styles */
 
-nav {
-    background-color: #222;
-    text-align: center;
+.logo {
+    height: 100px;
 }
 
+.logo-wrapper {
+    background-color: #c78c06;
+
+}
+
+nav {
+    background-color: #222;
+    background-size: contain;
+    display: block;
+    padding: 1em;
+}
 
 nav ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center;
-}
-
-form {
-    display: flex;
+    width: 100%;
 }
 
 nav ul li {
+    display: block;
     font-size: 18px;
-    padding: 1em;
+}
+
+a,
+a:link,
+a:visited {
+    color: #c78c06;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #222;
+    background-color: #c78c06;
 }
 
 nav ul li a {
     text-decoration: none;
-}
-
-.nav a,
-.nav a:link,
-.nav a:visited {
-    background-color: #222;
-    color: #c78c06;
-}
-
-.nav a:hover {
-    background: #c78c06;
-    color: inherit;
-}
-
-.nav a.current {
-    background: #c78c06;
-    color: inherit;
-   
-   
-}
-
-.header-logo {
-    float: left;
-    margin-right: 100%;
-    margin-bottom: 10%;
-
+    display: block;
+    padding: 1em;
+    text-align: center;
 }
 
 /* search */
@@ -154,13 +142,12 @@ nav ul li a {
 }
 
 .search-btn {
-    background-color: #333;
+    background-color: #222;
     color: #c78c06;
     border: 1px solid #c78c06;
     padding: 10px;
     font-size: 18px;
-    margin-left: none;
-    margin-bottom: none;
+
 
 }
 
@@ -203,6 +190,8 @@ p {
     padding: 2em;
     font-size: 16px;
     border: none;
+    margin-bottom: 0.8em;
+    margin-left: 0.8em;
 }
 
 
@@ -212,13 +201,13 @@ p {
     background-color: #ffe6ac;
     margin: 0 auto;
     margin: 1em;
-    margin-left: 7.3em;
-    margin-right: 7.3em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .about-us-img {
     width: 100%;
-  padding:1em;
+    padding: 1em;
 }
 
 .about-description {
@@ -232,6 +221,7 @@ p {
     height: auto;
 }
 
+
 .card {
     margin: 1em;
     background-color: #ffe6ac;
@@ -244,6 +234,9 @@ p {
     padding: 2em;
     font-size: 16px;
     border: none;
+    padding: 2em;
+    margin-bottom: 0.8em;
+    margin-left: 0.8em;
 }
 
 /* Styling Our Vision */
@@ -262,7 +255,7 @@ p {
 }
 
 .btn {
-    
+
     background-color: #22222279;
     padding: 2rem;
     color: white;
@@ -293,43 +286,29 @@ hr {
 
 textarea {
     width: auto;
-    height:150%;
+    height: 150%;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 1px solid #222;
     border-radius: 4px;
-resize: none;
+    resize: none;
 }
-
-/* input [type=text] {
-    width: 100%;
-    height:150%;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 1px solid #222;
-    border-radius: 4px;
-resize: none;
-} */
 
 #feedback {
     border: 1px solid black;
-    padding: 10px; 
+    padding: 10px;
     margin-top: 10px;
 }
 
 .feedback-label {
     font-size: 16px;
-    padding-top:10px;
+    padding-top: 10px;
 }
 
 #fullname,
 #email {
     width: 97.5%;
     padding: ;
-}
-
-.choice {
-    margin-bottom: 7px;
 }
 
 .message-textbox {
@@ -346,13 +325,160 @@ resize: none;
 }
 
 /* Styling Hours of Operation */
+th {
+    background-color: #ffe6ac;
 
 
+}
 
-/*  */
+table {
+    width: 40%;
+    border-collapse: collapse;
+
+}
+
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid black;
+/* adds border */
+}
+
+
+/* styling location */
+
+
+/* Styling footer */
+.footer {
+    text-decoration: #c78c06;
+    margin-top: 20px;
+    padding: 17px 0;
+    border: none;
+    background-color: #222;
+    font-size: 14px;
+    color: #c78c06;
+    margin: 1em;
+}
 
 /**********************************
             DESKTOP STYLES
 ***********************************/
 
-@media screen (min-width:760px) 
+ 
+
+@media screen and (min-width:760px) {
+
+    body {
+        margin: 0 auto;
+    }
+
+    /* Style Navigation */
+
+    .logo-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav {
+        background-color: #222;
+        padding-bottom: 1em;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    nav ul li a {
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .section {
+        background-color: #ffe6ac;
+    }
+
+    .about-us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:auto;
+        margin: 0;
+    }
+
+    .about-us-img {
+        padding: 0;
+        padding-top: 1em;
+    }
+
+    .about-us h2 {
+        margin: 0;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "hdr hdr hdr hdr hdr hdr"
+            "dgt dgt dgt mrkt mrkt mrkt"
+            "vid vid web web prt prt";
+        column-gap: 1em;
+        row-gap: 1em;
+    }
+
+    .hdr {
+        grid-area: hdr;
+    }
+
+    .dgt {
+        grid-area: dgt;
+    }
+
+    .mrkt {
+        grid-area: mrkt;
+    }
+
+    .vid {
+        grid-area: vid;
+    }
+
+    .web {
+        grid-area: web;
+    }
+
+    .prt {
+        grid-area: prt;
+    }
+
+
+    .card {
+        margin: 0;
+    }
+
+    .card-btn {
+        display: block;
+        width: 100%;
+    }
+
+
+
+}

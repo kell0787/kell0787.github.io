@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3 Star Media</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -14,29 +15,29 @@
         <div class="container">
 
             <!-- Navigation section -->
-            <nav>
-                <div class="container">
-                    <ul class="nav">
-                        <ul>
-                            <li> <img src="images/logo.png" alt="three star media" class="header-logo"></li>
-                            <li> <a href="index.html" class="current">Home</a></li>
-                            <li class="nav-item"><a href="#about">About us</a></li>
-                            <li class="nav-item"><a href="#team">Our Team</a></li>
-                            <li class="nav-item"><a href="#contact">Contact Us</a></li>
-
-                            <form class="search">
-                                <input type="text" id="search" placeholder="Search" class="search input">
-                                <button class="search-btn"> <i class="fa-solid fa-magnifying-glass"></i></button>
-                            </form>
-                        </ul>
-
-                </div>
-
-            </nav>
-            </ul>
-
+            <div class="nav">
+                <nav id="home">
+                    <div class="logo-wrapper">
+                        <img class="logo" src="images/logo.png" alt="Three Star Media Logo">
+                    </div>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <form action="search" class="search">
+                        <input type="search" class="search-input" placeholder="Search">
+                        <button class="search-btn" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </nav>
+            </div>
+            <!-- This is a background image for CSS to create layer effect-->
             <div class="banner">
-                <!-- This is a background image for CSS to create layer effect-->
+
                 <div class="wrapper welcome">
                     <h1>Welcome to Three Star <br />Media</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -51,34 +52,32 @@
 
 
     <!-- about us section -->
-    <div class="about-us">
-        <div class="container">
-            <img src="images/about-us.jpg" class="about-us-img">
+    <section id="about" class="about box">
+        <div class="about-us">
+            <div class="container">
+                <img src="images/about-us.jpg" class="about-us-img">
+            </div>
+            <div class="about-description">
+                <h2>About Us</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Proin
+                    nibh nisl condimentum id venenatis a condimentum vitae. Nunc eget lorem dolor sed viverra
+                    ipsum nunc aliquet. Massa enim nec dui nunc mattis enim. Mi sit amet mauris commodo quis
+                    imperdiet massa. Nunc mattis enim ut tellus.
+                </p>
+            </div>
         </div>
-        <div class="about-description">
-            <h2>About Us</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Proin
-                nibh nisl condimentum id venenatis a condimentum vitae. Nunc eget lorem dolor sed viverra
-                ipsum nunc aliquet. Massa enim nec dui nunc mattis enim. Mi sit amet mauris commodo quis
-                imperdiet massa. Nunc mattis enim ut tellus.
-            </p>
-        </div>
-    </div>
-    </div>
+    </section>
 
-    </div>
-    </div>
-    </div>
+
+
 
     <!-- our services section  -->
-    <div class="our-service">
-        <div class="container">
-            <h2>Our services</h2>
-            <div class="c-row">
-                <div class="c-col">
-                    <div class="card">
+    <div class="our-service container">
+            <h2 class="hdr">Our services</h2>
+                
+                    <div class="card dgt">
                         <img src="images/digital.jpg" class="services" alt="digital">
                         <div class="card-description">
                             <h2>Digital Transformation</h2>
@@ -90,13 +89,13 @@
                                 amet mauris commodo quis imperdiet massa. Nunc mattis enim ut tellus.
                             </p>
                             <button class="btn-custom">Digital Plans <i class="fa-solid fa-caret-right"
-                                    style="color: #ffffff;"></i></button>  
-                                    <!-- adding arrows ^ -->
+                                    style="color: #ffffff;"></i></button>
+                            <!-- adding arrows ^ -->
                         </div>
                     </div>
-                </div>
-                <div class="c-col">
-                    <div class="card">
+        
+              
+                    <div class="card mrkt">
                         <img src="images/marketing.jpg" class="services" alt="marketing">
                         <div class="card-description">
                             <h2>Marketing</h2>
@@ -111,11 +110,8 @@
                                     style="color: #ffffff;"></i></button>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="c-row">
-                <div class="c-col-1">
-                    <div class="card">
+         
+                    <div class="card vid">
                         <img src="images/video.jpg" class="services" alt="video">
                         <div class="card-description">
                             <h2>Video Production</h2>
@@ -130,9 +126,8 @@
                                     style="color: #ffffff;"></i></button>
                         </div>
                     </div>
-                </div>
-                <div class="c-col-1">
-                    <div class="card">
+              
+                    <div class="card web">
                         <img src="images/web.jpg" class="services" alt="phone">
                         <div class="card-description">
                             <h2>Web Development</h2>
@@ -147,9 +142,8 @@
                                     style="color: #ffffff;"></i></button>
                         </div>
                     </div>
-                </div>
-                <div class="c-col-1">
-                    <div class="card">
+
+                    <div class="card prt">
                         <img src="images/print.jpg" class="services" alt="print">
                         <div class="card-description">
                             <h2>Print</h2>
@@ -164,9 +158,6 @@
                                     style="color: #ffffff;"></i></button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
     </div>
 
@@ -248,12 +239,12 @@
 
                     <label class="feedback-label">Message</label> <br>
                     <textarea name="your-message" class="message-textbox" id="your-message" cols="84"
-                                rows="8"></textarea>
-                        
+                        rows="8"></textarea>
+
                 </div>
                 <div class="content">
                     <button class="btn-send">Send</button>
-               </div>
+                </div>
                 </form>
             </div>
         </div>
@@ -293,7 +284,7 @@
         <div class="location">
             <h3>Location</h3>
             <div style="width: 100%">
-                <iframe
+                <iframe class="location"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9444602850867!2d-75.75979661387696!3d45.3499333964843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701049455768!5m2!1sen!2sca"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
