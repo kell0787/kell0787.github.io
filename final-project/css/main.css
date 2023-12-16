@@ -325,26 +325,36 @@ textarea {
 }
 
 /* Styling Hours of Operation */
-th {
-    background-color: #ffe6ac;
-
-
-}
 
 table {
-    width: 40%;
-    border-collapse: collapse;
-
+    width: 100%;
+    height: auto;
 }
 
-table th:nth-child(n),
-table td:nth-child(n) {
+thead {
+    background-color: #ffe6ac;
+    height: 40px;
+}
+
+table,
+th,
+td {
+    font-weight: 500;
     border: 1px solid black;
-/* adds border */
+    padding: 1em;
 }
+
 
 
 /* styling location */
+.location h3 {
+    margin-bottom: 0.5em;
+}
+
+iframe {
+    height: 450px;
+    width: 50%;
+}
 
 
 /* Styling footer */
@@ -479,6 +489,66 @@ table td:nth-child(n) {
         width: 100%;
     }
 
+/* styling team */
+    .team {
+        margin: 0;
+    }
+
+    .team-membr {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+
+    .bob {
+        flex-direction: row-reverse;
+    }
 
 
+
+    /* Styling Contact Us */
+
+    .contact-us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "hdr hdr"
+            "msg loc"
+            "hrs hrs";
+        column-gap: 1em;
+        row-gap: 1em;
+    }
+
+    .contact-us h2 {
+        grid-area: hdr;
+    }
+
+    .contact-us .message {
+        grid-area: msg;
+    }
+
+    .contact-us .hours {
+        grid-area: hrs;
+    }
+
+    .contact-us .location {
+        grid-area: loc;
+    }
+
+    .contact-us input {
+        height: 2em
+    }
+    
+    .message-textbox {
+        height: 10em;
+    }
+
+    /* styling map  */
+    iframe {
+        display: grid;
+        grid-row: 1/4;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+      }
+    
 }
